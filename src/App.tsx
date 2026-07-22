@@ -9,6 +9,7 @@ const NAV_LINKS = [
   { label: 'Portfolio', href: '#portfolio' },
   { label: 'Habilidades', href: '#habilidades' },
   { label: 'Experiência', href: '#experiencia' },
+  { label: 'Formação', href: '#formacao' },
   { label: 'Contato', href: '#contato' },
 ]
 
@@ -59,6 +60,98 @@ const EXPERIENCES = [
     description:
       'Desenvolvimento e manutenção da plataforma BandPlay em múltiplas plataformas (iOS, Android, Android TV, Fire TV, Web, SmartTV). Arquitetura frontend com React Native, TypeScript e Redux Toolkit.',
     stack: ['React Native', 'TypeScript', 'Redux Toolkit', 'RTK Query', 'Expo', 'Next.js'],
+  },
+  {
+    role: 'Frontend Engineer',
+    company: 'Under',
+    period: 'mar de 2022 — mar de 2023 · 1 ano 1 mês',
+    description:
+      'Desenvolvimento de um produto inovador utilizando TypeScript e ReactJS, proporcionando aos clientes uma maneira rápida e segura de adquirir seus baremetals por meio de uma plataforma construída sob medida.',
+    stack: ['Redux', 'TypeScript', 'ReactJS'],
+  },
+  {
+    role: 'Frontend Engineer',
+    company: 'HDN Digital · Autônomo',
+    period: 'ago de 2021 — jul de 2022 · 1 ano',
+    description:
+      'Experiência em colaborar com clientes de renome, incluindo Ourofino e Ambev, para desenvolver aplicações sólidas e robustas. Trabalho focado em criar soluções que aproximam clientes e produto.',
+    stack: ['React Native', 'React.js'],
+  },
+  {
+    role: 'Frontend Engineer',
+    company: 'web.art group',
+    period: 'fev de 2021 — jul de 2021 · 6 meses',
+    description:
+      'Desenvolvimento de Web Apps/SPAs com VueJS e ReactJS, além de landing pages com HTML, CSS e JavaScript.',
+    stack: ['VueJS', 'ReactJS', 'HTML', 'CSS', 'JavaScript'],
+  },
+  {
+    role: 'Desenvolvedor Front-end',
+    company: 'OKSIS',
+    period: 'abr de 2019 — nov de 2020 · 1 ano 8 meses',
+    description:
+      'Desenvolvimento de Web Apps/SPAs com Angular e de aplicativos mobile com React Native.',
+    stack: ['Angular', 'React Native'],
+  },
+]
+
+const COURSES = [
+  {
+    title: 'MBA em Engenharia de Software com IA',
+    provider: 'Full Cycle',
+    instructors: 'Wesley Willians',
+    status: 'Em andamento',
+    description:
+      'MBA com foco em arquitetura de software, backend, DevOps e boas práticas de engenharia, explorando a aplicação de Inteligência Artificial em sistemas de produção.',
+  },
+  {
+    title: 'Formação em React Native',
+    provider: 'Full Stack Club',
+    instructors: 'Pedro Goiânia e Felipe Rocha',
+    description:
+      'Formação completa em desenvolvimento mobile com React Native, do básico ao avançado, com foco em construção de aplicativos performáticos e escaláveis.',
+  },
+  {
+    title: 'Formação Expert em IA',
+    provider: 'Daxus',
+    instructors: 'Lorenzzo Rodrigues',
+    description:
+      'Trilha voltada para o domínio de ferramentas e conceitos de Inteligência Artificial aplicados ao desenvolvimento de software, da teoria à prática.',
+  },
+  {
+    title: 'Engenharia de IA',
+    provider: 'Jornada de Dados',
+    instructors: 'Luciano Vasconcelos e Caio Machado',
+    description:
+      'Curso focado em engenharia de dados e IA, cobrindo pipelines, modelos e infraestrutura para construção de sistemas inteligentes orientados a dados.',
+  },
+  {
+    title: 'Especialista em IA',
+    provider: 'Alura',
+    instructors: 'Lucas Mata',
+    description:
+      'Formação de especialização em Inteligência Artificial, com trilha completa de conceitos, ferramentas e aplicações práticas de IA no desenvolvimento de produtos.',
+  },
+  {
+    title: 'JavaScript e TypeScript do básico ao avançado',
+    provider: 'Curso',
+    instructors: 'Luiz Otávio Miranda',
+    description:
+      'Curso completo de JavaScript e TypeScript, consolidando fundamentos da linguagem, tipagem estática e boas práticas para aplicações modernas.',
+  },
+  {
+    title: 'Formação IA para Devs',
+    provider: 'Full Stack Club',
+    instructors: 'Felipe Rocha',
+    description:
+      'Formação voltada para desenvolvedores que querem incorporar Inteligência Artificial no dia a dia, integrando modelos e ferramentas de IA em aplicações reais.',
+  },
+  {
+    title: 'NodeJs, Typescript, TDD, DDD, Clean Architecture e SOLID',
+    provider: 'Curso',
+    instructors: 'Rodrigo Manguinho',
+    description:
+      'Curso de backend com Node.js e TypeScript aplicando TDD, DDD, Clean Architecture e princípios SOLID na prática, para construção de sistemas robustos, testáveis e de fácil manutenção.',
   },
 ]
 
@@ -352,7 +445,7 @@ function Hero() {
           transition={{ delay: 1, duration: 0.5 }}
           className="text-slate-400 text-lg max-w-xl mx-auto mb-10 leading-relaxed"
         >
-          Construindo experiências digitais de alta qualidade para mobile e web. Especializado em React Native e TypeScript.
+          Construindo produtos digitais de alta qualidade para mobile e web com React Native e TypeScript — potencializados por IA, da arquitetura de prompts a fluxos de desenvolvimento com agentes autônomos.
         </motion.p>
 
         <motion.div
@@ -376,7 +469,7 @@ function Hero() {
           className="flex items-center justify-center gap-4 mb-16"
         >
           <a
-            href="https://github.com/paulokaome"
+            href="https://github.com/bypauloazevedo"
             target="_blank"
             rel="noopener noreferrer"
             className="w-10 h-10 rounded-full border border-white/10 hover:border-violet-500/40 flex items-center justify-center text-slate-400 hover:text-white transition-colors"
@@ -384,7 +477,7 @@ function Hero() {
             <Github size={18} />
           </a>
           <a
-            href="https://linkedin.com/in/pauloazevedo"
+            href="https://www.linkedin.com/in/pauloemidio/"
             target="_blank"
             rel="noopener noreferrer"
             className="w-10 h-10 rounded-full border border-white/10 hover:border-violet-500/40 flex items-center justify-center text-slate-400 hover:text-white transition-colors"
@@ -442,7 +535,7 @@ function About() {
             <p>Sou apaixonado por interfaces bem construídas, performance e código limpo.</p>
             <div className="flex items-center gap-2 text-sm pt-2">
               <MapPin size={14} className="text-violet-400" />
-              <span>São Paulo, Brasil</span>
+              <span>Rio de Janeiro, Brasil</span>
             </div>
           </div>
         </Reveal>
@@ -684,6 +777,39 @@ function Experience() {
   )
 }
 
+// ── Courses ────────────────────────────────────────────────────────────────────
+
+function Courses() {
+  return (
+    <section id="formacao" className="max-w-5xl mx-auto px-5 py-24">
+      <SectionHead
+        eyebrow="// formação contínua"
+        title="Formação Contínua"
+        sub="Cursos e formações que venho fazendo para me manter atualizado."
+      />
+      <div className="grid md:grid-cols-2 gap-4">
+        {COURSES.map((c, i) => (
+          <Reveal key={c.title} delay={i * 0.06}>
+            <div className="h-full bg-[#111120]/80 backdrop-blur-sm border border-white/[0.07] rounded-2xl p-6 hover:border-violet-500/25 transition-all">
+              <div className="flex items-start justify-between gap-2 mb-2">
+                <h3 className="text-base font-bold leading-snug">{c.title}</h3>
+                {c.status && (
+                  <span className="shrink-0 text-[0.65rem] font-mono px-2 py-0.5 rounded-md bg-emerald-500/10 border border-emerald-500/30 text-emerald-300 whitespace-nowrap">
+                    {c.status}
+                  </span>
+                )}
+              </div>
+              <p className="text-violet-400 font-mono text-xs mb-1">{c.provider}</p>
+              <p className="text-slate-500 text-xs mb-3">{c.instructors}</p>
+              <p className="text-slate-400 text-sm leading-relaxed">{c.description}</p>
+            </div>
+          </Reveal>
+        ))}
+      </div>
+    </section>
+  )
+}
+
 // ── Contact ────────────────────────────────────────────────────────────────────
 
 function Contact() {
@@ -704,7 +830,7 @@ function Contact() {
               <Mail size={16} /> Enviar e-mail
             </a>
             <a
-              href="https://linkedin.com/in/pauloazevedo"
+              href="https://www.linkedin.com/in/pauloemidio/"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl border border-white/10 hover:border-violet-500/40 text-slate-300 hover:text-white font-semibold text-sm transition-colors"
@@ -730,7 +856,7 @@ function Footer() {
         <span>© {new Date().getFullYear()} Paulo Azevedo. Todos os direitos reservados.</span>
         <div className="flex gap-4">
           <a
-            href="https://github.com/paulokaome"
+            href="https://github.com/bypauloazevedo"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-slate-400 transition-colors"
@@ -738,7 +864,7 @@ function Footer() {
             <Github size={16} />
           </a>
           <a
-            href="https://linkedin.com/in/pauloazevedo"
+            href="https://www.linkedin.com/in/pauloemidio/"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-slate-400 transition-colors"
@@ -763,6 +889,7 @@ export default function App() {
       <Portfolio />
       <Skills />
       <Experience />
+      <Courses />
       <Contact />
       <Footer />
     </>
