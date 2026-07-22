@@ -510,10 +510,10 @@ function Hero() {
 
 function About() {
   const stats = [
-    { value: '4+', label: 'Anos de experiência' },
+    { value: '10+', label: 'Anos de experiência' },
     { value: '6', label: 'Plataformas' },
-    { value: '3+', label: 'Empresas' },
-    { value: '50k+', label: 'Linhas de código' },
+    { value: '5', label: 'Empresas' },
+    { value: '400k+', label: 'Linhas de código' },
   ]
 
   return (
